@@ -8,15 +8,15 @@ const biciArray = [
   //2.
   {
     nome: 'tandem',
-    peso: '25kg'
+    peso: 25
   },
   {
     nome: 'mountain bike',
-    peso: '30kg'
+    peso: 30
   },
   {
     nome: 'Santa Cruz',
-    peso: '20kg'
+    peso: 20
   }
 ]
 //3.

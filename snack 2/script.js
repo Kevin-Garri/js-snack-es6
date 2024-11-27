@@ -33,14 +33,38 @@ const SquadreArray = [
 //numero casuale tra val min e max 0 incluso e 1 escluso
 //mathfloor arrotonda per difetto il valore intero
 //+min perchè garantisce valore casuale finale compreso tra min e max
-function gerRandomNumber(min, max) {
+
+/*function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+*/
 
+let puntiFatti = 0
+let falliSubiti = 0
+
+for (let i in SquadreArray) {
+  SquadreArray[i].puntiFatti = Math.floor(Math.random() * 50)
+  SquadreArray[i].falliSubiti = Math.floor(Math.random() * 50)
+}
 
 //stampo array
 console.log(SquadreArray);
-
 //5.
+//all'interno di push metto oggetto con queste 2 proprietà
+let SquadreNomiFalli = []
+// for (let i = 0; i < SquadreArray.length; i++) {
+//   SquadreNomiFalli.push({
+//     nome: SquadreArray[i].nome,
+//     falliSubiti: SquadreArray[i].falliSubiti
+//   })
+// }
+
+//for of
+for (let squadra of SquadreArray)
+  SquadreNomiFalli.push({
+    nome: squadra.nome,
+    falliSubiti: squadra.falliSubiti
+  });
+console.log(SquadreNomiFalli);
 
 
