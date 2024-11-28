@@ -59,7 +59,7 @@ let SquadreNomiFalli = []
 //   })
 // }
 
-//for of
+//for of Ad ogni iterazione JavaScript assegna alla variabile valore il contenuto di ciascun elemento dell'array. Ad ogni ciclo va a prendere l'elemento del ciclo.
 for (let squadra of SquadreArray)
   SquadreNomiFalli.push({
     nome: squadra.nome,
